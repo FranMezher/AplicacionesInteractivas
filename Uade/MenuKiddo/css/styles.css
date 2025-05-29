@@ -1,0 +1,139 @@
+body {
+  background-color: #fdf8f0;
+}
+
+/* Sección Hamburguesas */
+.product-card {
+  background-color: #f37021;
+  border-radius: 15px;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+.product-card .title-badge {
+  background-color: #f3f0e8;
+  color: black;
+  font-weight: bold;
+  padding: 5px 15px;
+  border-radius: 5px;
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.2rem;
+}
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  margin: 20px 0;
+}
+.product-card p {
+  margin: 0;
+  font-size: 1rem;
+}
+.product-card .price-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+  font-weight: bold;
+}
+.product-card .price-list li {
+  margin: 5px 0;
+}
+
+/* Acompañamientos */
+.accompaniment-card {
+  border: 3px solid #114477;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+  position: relative;
+}
+.accompaniment-card img {
+  max-width: 100%;
+  height: auto;
+  margin: 10px 0;
+}
+.accompaniment-card .title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #114477;
+  margin-top: 10px;
+}
+.accompaniment-card p {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+.price-btn {
+  display: inline-block;
+  background-color: #114477;
+  color: white;
+  padding: 5px 15px;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+/* Bebidas */
+.bebidas-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #114477;
+  text-shadow: 2px 2px 0 #fff;
+  font-family: Arial, sans-serif;
+  margin: 30px 0 20px;
+}
+.bebidas-list {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #114477;
+  list-style: none;
+  padding: 0;
+}
+.bebidas-list li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  border-bottom: 1px dotted #114477;
+  padding-bottom: 5px;
+}
+
+/* Combos */
+.combo-card {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  position: relative;
+}
+.combo-card img {
+  max-width: 100%;
+  height: auto;
+  margin: 15px 0;
+}
+.combo-title {
+  font-weight: bold;
+  font-size: 2rem;
+  color: #114477;
+  font-family: Arial, sans-serif;
+  margin-bottom: 10px;
+}
+.combo-desc {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+.combo-price {
+  background-color: #114477;
+  color: white;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}

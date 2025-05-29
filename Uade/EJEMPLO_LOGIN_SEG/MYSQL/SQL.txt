@@ -1,0 +1,19 @@
+CREATE DATABASE ejemplo_login;
+go
+
+USE ejemplo_login;
+
+go
+
+
+
+
+
+CREATE TABLE usuarios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    usuario VARCHAR(50) NOT NULL,
+    clave VARCHAR(255) NOT NULL
+);
+
+go
+INSERT INTO usuarios (usuario, clave) VALUES ('admin', '1234');

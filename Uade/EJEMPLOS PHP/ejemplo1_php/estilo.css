@@ -1,0 +1,88 @@
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f8f8f8; /* Un gris muy claro para el fondo */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Contenedor principal de productos */
+.products-container {
+    max-width: 960px; /* Ancho máximo para el contenido */
+    margin: 30px auto; /* Centrar el contenedor con margen superior e inferior */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Sombra suave */
+}
+
+.section-title {
+    text-align: center;
+    color: #34495e; /* Un gris azulado oscuro */
+    margin-bottom: 40px;
+    font-size: 2.2em;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e0e0e0; /* Una línea divisoria */
+}
+
+/* Estilo de la cuadrícula de productos */
+.product-grid {
+    display: grid; /* Habilitar CSS Grid */
+    /* Define columnas: ajusta automáticamente a 300px o una fracción del espacio */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px; /* Espacio entre las tarjetas */
+    justify-content: center; /* Centra las tarjetas si no llenan la fila */
+}
+
+/* Estilo para cada tarjeta de producto */
+.product-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0; /* Borde sutil */
+    border-radius: 6px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Sombra más ligera */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Transición suave */
+    display: flex;
+    flex-direction: column; /* Organiza el contenido en columna */
+    justify-content: space-between; /* Distribuye el espacio verticalmente */
+    min-height: 180px; /* Altura mínima para que las tarjetas se vean uniformes */
+}
+
+.product-card:hover {
+    transform: translateY(-3px); /* Efecto de levantamiento al pasar el ratón */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada al pasar el ratón */
+}
+
+.product-id {
+    font-size: 0.85em;
+    color: #7f8c8d;
+    margin-bottom: 10px;
+    display: block; /* Asegura que el ID esté en su propia línea */
+}
+
+.product-name {
+    font-size: 1.4em;
+    color: #2c3e50;
+    margin: 10px 0;
+    font-weight: bold;
+    /* Asegura que el nombre no se corte si es largo */
+    word-wrap: break-word;
+}
+
+.product-price {
+    font-size: 1.7em;
+    color: #e74c3c; /* Un rojo para el precio */
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+/* Estilo para el mensaje "No hay productos" */
+.no-products-message {
+    text-align: center;
+    font-size: 1.1em;
+    color: #7f8c8d;
+    padding: 50px 0;
+}

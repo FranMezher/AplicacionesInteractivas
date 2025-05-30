@@ -15,11 +15,11 @@ include("includes/header.php");
 <div class="container mt-5">
     <div class="card shadow">
         <div class="card-header bg-primary text-white">
-            <h3 class="mb-0">Panel de Autos</h3>
+            <h3 class="mb-0">Panel de gestion autos</h3>
         </div>
         <div class="card-body">
             <a class="btn btn-success mb-3" href="agregar.php" role="button">Nuevo Auto</a>
-            <a class="btn btn-success mb-3" href="../index.php" role="button">Volver</a>
+            <a class="btn btn-outline-primary float-end" href="../index.php" role="button">Volver</a>
             <div class="table-responsive">
                 <table id="tablaAutos" class="table table-striped table-bordered">
                     <thead class="table-dark">

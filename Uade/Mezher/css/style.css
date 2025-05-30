@@ -952,5 +952,8 @@
     background: var(--bs-dark);
 }
 /*** copyright end ***/
+.font-poppins {
+  font-family: 'Poppins', sans-serif;
+}
 
 

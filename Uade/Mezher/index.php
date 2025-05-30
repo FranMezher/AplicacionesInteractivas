@@ -131,20 +131,24 @@
     <!-- Header End -->
 
     <!-- Car categories Start -->
+    <?php
+    $query = "SELECT autos.*, categorias.categoria AS nombre_categoria
+          FROM autos
+          JOIN categorias ON autos.id_categoria = categorias.id_categoria";
+    $resultado = mysqli_query($conn, $query);
+    $totalAutos = mysqli_num_rows($resultado);
+    ?>
     <div class="container-fluid categories py-5">
         <div class="container py-5">
             <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
-                <h1 class="display-5 text-capitalize mb-3">Vehicle <span class="text-primary">Categories</span></h1>
-                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut amet nemo expedita
-                    asperiores commodi accusantium at cum harum, excepturi, quia tempora cupiditate! Adipisci facilis
-                    modi quisquam quia distinctio,
-                </p>
+                <h1 class="display-5 text-capitalize mb-3">Nuestros <span class="text-primary">Autos</span></h1>
+                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
             </div>
-            <div class="categories-carousel owl-carousel wow fadeInUp" data-wow-delay="0.1s">
-                <?php
-                if ($totalAutos > 0) {
-                    while ($fila = mysqli_fetch_assoc($resultado)) {
-                        ?>
+
+            <?php if ($totalAutos >= 3): ?>
+                <!-- Carrusel para 3 o más autos -->
+                <div class="categories-carousel owl-carousel wow fadeInUp" data-wow-delay="0.1s">
+                    <?php while ($fila = mysqli_fetch_assoc($resultado)) { ?>
                         <div class="categories-item p-4">
                             <div class="categories-item-inner">
                                 <div class="categories-img rounded-top">
@@ -153,46 +157,53 @@
                                 </div>
                                 <div class="categories-content rounded-bottom p-4">
                                     <h4><?php echo $fila['nombre']; ?></h4>
-                                    <div class="categories-review mb-4">
-                                        <div class="me-3">4.5 Review</div>
-                                        <div class="d-flex justify-content-center text-secondary">
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star text-body"></i>
-                                        </div>
-                                    </div>
                                     <div class="mb-4">
                                         <h4 class="bg-white text-primary rounded-pill py-2 px-4 mb-0">
                                             $<?php echo $fila['precio']; ?></h4>
                                     </div>
-                                    <div class="row gy-2 gx-0 text-center mb-4">
-                                        <div class="col-4 border-end border-white">
-                                            <i class="fa fa-users text-dark"></i> <span class="text-body ms-1">4 Seat</span>
-                                        </div>
-                                        <div class="col-4 border-end border-white">
-                                            <i class="fa fa-car text-dark"></i> <span
-                                                class="text-body ms-1"><?php echo $fila['marca']; ?></span>
-                                        </div>
-                                        <div class="col-4">
-                                            <i class="fa fa-gas-pump text-dark"></i> <span class="text-body ms-1">Petrol</span>
-                                        </div>
-                                    </div>
-                                    <a href="#" class="btn btn-primary rounded-pill d-flex justify-content-center py-3">Book
-                                        Now</a>
+                                    <a href="#" class="btn btn-primary rounded-pill d-flex justify-content-center py-3"><?php echo $fila['marca'];?></a>
                                 </div>
                             </div>
                         </div>
-                        <?php
-                    }
-                } else {
-                    echo '<p class="text-center text-muted">No hay autos disponibles en este momento.</p>';
-                }
-                ?>
-            </div>
+                    <?php } ?>
+                </div>
+
+            <?php else: ?>
+                <!-- Cards para menos de 3 autos -->
+                <div class="row g-4">
+                    <?php mysqli_data_seek($resultado, 0); // Reiniciamos el puntero de resultados ?>
+                    <?php while ($fila = mysqli_fetch_assoc($resultado)) { ?>
+                        <div class="col-lg-4 wow fadeInUp container-fluid blog" data-wow-delay="0.1s">
+                            <div class="blog-item">
+                                <div class="blog-img">
+                                    <img src="<?php echo str_replace('../', '', $fila['imagen']); ?>"
+                                        class="img-fluid rounded-top w-100" alt="Imagen de <?php echo $fila['nombre']; ?>">
+                                </div>
+                                <div class="blog-content rounded-bottom p-4">
+                                    <div class="blog-date"><?php echo $fila['nombre_categoria']; ?></div>
+                                    <div class="blog-comment my-3">
+                                        <div class="small">
+                                            <span class="fa fa-car text-primary"></span>
+                                            <span class="ms-2"><?php echo $fila['marca']; ?></span>
+                                        </div>
+                                        <div class="small">
+                                            <span class="fa fa-dollar-sign text-primary"></span>
+                                            <span class="ms-2">$<?php echo $fila['precio']; ?></span>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="h4 d-block mb-3"><?php echo $fila['nombre']; ?></a>
+                                    <a href="#" class="">Book Now <i class="fa fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    <?php } ?>
+                </div>
+
+            <?php endif; ?>
+
         </div>
     </div>
+
     <!-- Car categories End -->
 
     <!-- Footer Start -->

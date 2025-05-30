@@ -170,17 +170,16 @@
                                 <div class="blog-content rounded-bottom p-4">
                                     <div class="blog-date"><?php echo $fila['nombre_categoria']; ?></div>
                                     <div class="blog-comment my-3">
-                                        <div class="small">
+                                        <div class="mb-4">
                                             <span class="fa fa-car text-primary"></span>
-                                            <span class="ms-2"><?php echo $fila['marca']; ?></span>
+                                            <span class="mb-2"><?php echo $fila['marca']; ?></span>
                                         </div>
-                                        <div class="small">
-                                            <span class="fa fa-dollar-sign text-primary"></span>
-                                            <span class="ms-2">$<?php echo $fila['precio']; ?></span>
+                                        <div class="mb-4">
+                                            <span class="fa fa-dollar-sign text-primary "></span>
+                                            <span class="bg-white text-black rounded-pill py-2 px-4 mb-3 "><?php echo $fila['precio']; ?></span>
                                         </div>
                                     </div>
-                                    <a href="#" class="h4 d-block mb-3"><?php echo $fila['nombre']; ?></a>
-                                    <a href="#" class="">Book Now <i class="fa fa-arrow-right"></i></a>
+                                    <a href="#" class="btn btn-primary rounded-pill d-flex justify-content-center py-3"><?php echo $fila['nombre']; ?></a>
                                 </div>
                             </div>
                         </div>

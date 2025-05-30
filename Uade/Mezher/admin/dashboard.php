@@ -19,6 +19,7 @@ include("includes/header.php");
         </div>
         <div class="card-body">
             <a class="btn btn-success mb-3" href="agregar.php" role="button">Nuevo Auto</a>
+            <a class="btn btn-success mb-3" href="../index.php" role="button">Volver</a>
             <div class="table-responsive">
                 <table id="tablaAutos" class="table table-striped table-bordered">
                     <thead class="table-dark">

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Cental - Car Rent Website Template</title>
+    <title>Mezher Motors</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -55,12 +55,15 @@
             <div class="row gx-0 align-items-center" style="height: 45px;">
                 <div class="col-lg-6 text-center text-lg-start mb-lg-0">
                     <div class="d-flex flex-wrap">
-                        <a href="#" class="text-muted me-4"><i class="fas fa-map-marker-alt text-primary me-2"></i>Find
-                            A Location</a>
-                        <a href="tel:+01234567890" class="text-muted me-4"><i
-                                class="fas fa-phone-alt text-primary me-2"></i>+01234567890</a>
-                        <a href="mailto:example@gmail.com" class="text-muted me-0"><i
-                                class="fas fa-envelope text-primary me-2"></i>Example@gmail.com</a>
+                        <a href="#contact" class="text-muted me-4"><i
+                                class="fas fa-map-marker-alt text-primary me-2"></i>Buscanos Aqui</a>
+                        <a href="https://api.whatsapp.com/send?phone=5491166179112&text=Hola!%20Quisiera%20información%20sobre%20los%20autos"
+                            target="_blank" class="text-muted me-4">
+                            <i class="fas fa-phone-alt text-primary me-2"></i>+54 9 1166179112
+                        </a>
+
+                        <a href="#contact" class="text-muted me-0"><i
+                                class="fas fa-envelope text-primary me-2"></i>mezherg43@gmail.com</a>
                     </div>
                 </div>
                 <div class="col-lg-6 text-center text-lg-end">
@@ -85,7 +88,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <a href="" class="navbar-brand p-0">
-                    <h1 class="display-6 text-primary"><i class="fas fa-car-alt me-3"></i></i>Cental</h1>
+                    <h1 class="display-6 text-primary"><i class="fas fa-car-alt me-3"></i></i></h1>
                     <!-- <img src="img/logo.png" alt="Logo"> -->
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -93,22 +96,8 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav mx-auto py-0">
-                        <a href="index.html" class="nav-item nav-link">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="service.html" class="nav-item nav-link">Service</a>
-                        <a href="blog.html" class="nav-item nav-link">Blog</a>
-
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Pages</a>
-                            <div class="dropdown-menu m-0">
-                                <a href="feature.html" class="dropdown-item">Our Feature</a>
-                                <a href="cars.html" class="dropdown-item active">Our Cars</a>
-                                <a href="team.html" class="dropdown-item">Our Team</a>
-                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                                <a href="404.html" class="dropdown-item">404 Page</a>
-                            </div>
-                        </div>
-                        <a href="contact.php" class="nav-item nav-link">Contact</a>
+                        <a href="index.php" class="nav-item nav-link">Home</a>
+                        <a href="#contact" class="nav-item nav-link">Contact</a>
                     </div>
                     <a href="admin/index.php" class="btn btn-primary rounded-pill py-2 px-4">Iniciar Sesion</a>
                 </div>
@@ -120,11 +109,9 @@
     <!-- Header Start -->
     <div class="container-fluid bg-breadcrumb">
         <div class="container text-center py-5" style="max-width: 900px;">
-            <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Our Cars</h4>
+            <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Mezher Motors</h4>
             <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
-                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                <li class="breadcrumb-item active text-primary">Categories</li>
+                <li class="breadcrumb-item active text-primary">Home</li>
             </ol>
         </div>
     </div>
@@ -161,7 +148,8 @@
                                         <h4 class="bg-white text-primary rounded-pill py-2 px-4 mb-0">
                                             $<?php echo $fila['precio']; ?></h4>
                                     </div>
-                                    <a href="#" class="btn btn-primary rounded-pill d-flex justify-content-center py-3"><?php echo $fila['marca'];?></a>
+                                    <a href="#"
+                                        class="btn btn-primary rounded-pill d-flex justify-content-center py-3"><?php echo $fila['marca']; ?></a>
                                 </div>
                             </div>
                         </div>
@@ -207,68 +195,83 @@
     <!-- Car categories End -->
 
     <!-- Footer Start -->
-    <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+    <div class="container-fluid contact py-5" id="contact">
         <div class="container py-5">
             <div class="row g-5">
-                <div class="col-md-6 col-lg-6 col-xl-3">
-                    <div class="footer-item d-flex flex-column">
-                        <div class="footer-item">
-                            <h4 class="text-white mb-4">About Us</h4>
-                            <p class="mb-3">Dolor amet sit justo amet elitr clita ipsum elitr est.Lorem ipsum dolor sit
-                                amet, consectetur adipiscing elit consectetur adipiscing elit.</p>
-                        </div>
-                        <div class="position-relative">
-                            <input class="form-control rounded-pill w-100 py-3 ps-4 pe-5" type="text"
-                                placeholder="Enter your email">
-                            <button type="button"
-                                class="btn btn-secondary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">Subscribe</button>
-                        </div>
+                <div class="col-xl-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="bg-secondary p-5 rounded">
+                        <h4 class="text-primary mb-4">Contacta con nosotros</h4>
+                        <form id="form">
+                            <div class="row g-4">
+                                <div class="col-lg-12 col-xl-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="name" name="nombre"
+                                            placeholder="Ingrese su nombre">
+                                        <label for="name">Nombre</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-xl-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="email" name="email"
+                                            placeholder="Ingrese su Email">
+                                        <label for="email">Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-xl-6">
+                                    <div class="form-floating">
+                                        <input type="phone" class="form-control" id="phone" name="phone"
+                                            placeholder="Ingrese su telefono">
+                                        <label for="phone">Telefono</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-xl-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="marca" name="marca"
+                                            placeholder="Ingrese la marca del auto">
+                                        <label for="project">Marca</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="subject" placeholder="Asunto"
+                                            name="subject">
+                                        <label for="subject">Asunto</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Dejanos un mensaje aqui"
+                                            name="mensaje" id="mensaje" style="height: 160px"></textarea>
+                                        <label for="message">Mensaje</label>
+                                    </div>
+
+                                </div>
+                                <div class="col-12">
+                                    <button type='submit' id='button' class="btn btn-light w-100 py-3"
+                                        value="Send Email">Enviar Mensaje</button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-6 col-xl-3">
-                    <div class="footer-item d-flex flex-column">
-                        <h4 class="text-white mb-4">Quick Links</h4>
-                        <a href="#"><i class="fas fa-angle-right me-2"></i> About</a>
-                        <a href="#"><i class="fas fa-angle-right me-2"></i> Cars</a>
-                        <a href="#"><i class="fas fa-angle-right me-2"></i> Car Types</a>
-                        <a href="#"><i class="fas fa-angle-right me-2"></i> Team</a>
-                        <a href="#"><i class="fas fa-angle-right me-2"></i> Contact us</a>
-                        <a href="#"><i class="fas fa-angle-right me-2"></i> Terms & Conditions</a>
+                <div class="col-12 col-xl-1 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="d-flex flex-xl-column align-items-center justify-content-center">
+                        <a class="btn btn-xl-square btn-light rounded-circle mb-0 mb-xl-4 me-4 me-xl-0" href=""><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-xl-square btn-light rounded-circle mb-0 mb-xl-4 me-4 me-xl-0" href=""><i
+                                class="fab fa-twitter"></i></a>
+                        <a class="btn btn-xl-square btn-light rounded-circle mb-0 mb-xl-4 me-4 me-xl-0" href=""><i
+                                class="fab fa-instagram"></i></a>
+                        <a class="btn btn-xl-square btn-light rounded-circle mb-0 mb-xl-0 me-0 me-xl-0" href=""><i
+                                class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-6 col-xl-3">
-                    <div class="footer-item d-flex flex-column">
-                        <h4 class="text-white mb-4">Business Hours</h4>
-                        <div class="mb-3">
-                            <h6 class="text-muted mb-0">Mon - Friday:</h6>
-                            <p class="text-white mb-0">09.00 am to 07.00 pm</p>
-                        </div>
-                        <div class="mb-3">
-                            <h6 class="text-muted mb-0">Saturday:</h6>
-                            <p class="text-white mb-0">10.00 am to 05.00 pm</p>
-                        </div>
-                        <div class="mb-3">
-                            <h6 class="text-muted mb-0">Vacation:</h6>
-                            <p class="text-white mb-0">All Sunday is our vacation</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-6 col-xl-3">
-                    <div class="footer-item d-flex flex-column">
-                        <h4 class="text-white mb-4">Contact Info</h4>
-                        <a href="#"><i class="fa fa-map-marker-alt me-2"></i> 123 Street, New York, USA</a>
-                        <a href="mailto:info@example.com"><i class="fas fa-envelope me-2"></i> info@example.com</a>
-                        <a href="tel:+012 345 67890"><i class="fas fa-phone me-2"></i> +012 345 67890</a>
-                        <a href="tel:+012 345 67890" class="mb-3"><i class="fas fa-print me-2"></i> +012 345 67890</a>
-                        <div class="d-flex">
-                            <a class="btn btn-secondary btn-md-square rounded-circle me-3" href=""><i
-                                    class="fab fa-facebook-f text-white"></i></a>
-                            <a class="btn btn-secondary btn-md-square rounded-circle me-3" href=""><i
-                                    class="fab fa-twitter text-white"></i></a>
-                            <a class="btn btn-secondary btn-md-square rounded-circle me-3" href=""><i
-                                    class="fab fa-instagram text-white"></i></a>
-                            <a class="btn btn-secondary btn-md-square rounded-circle me-0" href=""><i
-                                    class="fab fa-linkedin-in text-white"></i></a>
+                <div class="col-12 col-xl-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="p-5 bg-light rounded">
+                        <div class="rounded">
+                            <iframe class="rounded w-100" style="height: 533px;"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13135.504159191734!2d-58.50967880279391!3d-34.60729594935323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb620cc2c2d77%3A0x37eac0cdbf696d7b!2sComuna%2011%2C%20Santo%20Tom%C3%A9%203248%2C%20C1417GFS%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1sen!2sar!4v1748614564114!5m2!1sen!2sar"
+                                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
                 </div>
@@ -290,9 +293,15 @@
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/counterup/counterup.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        emailjs.init('cbtBQq5TyNi14DDgc')
+    </script>
 
 
     <!-- Template Javascript -->
+    <script src="js/mail.js"></script>
     <script src="js/main.js"></script>
 </body>
 

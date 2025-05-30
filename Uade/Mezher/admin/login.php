@@ -22,7 +22,7 @@ include("conexion.php");
 		
 		
 
-		echo"<script type='text/javascript'>location.href='agregar.php'</script>";
+		echo"<script type='text/javascript'>location.href='dashboard.php'</script>";
 
 	}else{
 

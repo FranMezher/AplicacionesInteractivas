@@ -20,7 +20,8 @@
            
                 <div class="form-group">                    
                 <input type="text" name="usuario" placeholder="Usuario" class = "form-control" autocomplete="new-number" required>
-                <input type="text" name="clave" placeholder="Clave" class = "form-control" autocomplete="new-number" required>
+                <input type="password" name="clave" placeholder="Clave" class = "form-control" autocomplete="new-password" required>
+                <input type="text" name="gmail" placeholder="Gmail" class = "form-control" autocomplete="new-number" required>
                  </div>                 
                
                 <button type="submit" class="btn btn-primary">Registrarse</button>
@@ -50,14 +51,14 @@
         <div class="overlay-container"> 
             <div class="overlay">
                 <div class="overlay-panel overlay-left">
-                    <h3>Registro</h3>
-                    <p>Si sos Docente de UADE ingresa Usuario y Constraseña</p>
-                    <button class="ghost" id="signIn">Ingresar</button>
+                    <h3>Ya tenes cuenta?</h3>
+                    <p></p>
+                    <button class="ghost" id="signIn">Login</button>
                 </div>
                 <div class="overlay-panel overlay-right">
-                    <h3>ALUMNOS</h3>
-                    <p>Si sos alumno de UADE COSTA ingresa solo con tu numero de DNI</p>
-                    <button class="ghost" id="signUp">Ingresar</button>
+                    <h3>Car</h3>
+                    <p>No tenes cuenta?</p>
+                    <button class="ghost" id="signUp">Registrarse</button>
                 </div>
             </div>
         </div>

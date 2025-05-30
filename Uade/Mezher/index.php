@@ -108,7 +108,7 @@
                                 <a href="404.html" class="dropdown-item">404 Page</a>
                             </div>
                         </div>
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        <a href="contact.php" class="nav-item nav-link">Contact</a>
                     </div>
                     <a href="admin/index.php" class="btn btn-primary rounded-pill py-2 px-4">Iniciar Sesion</a>
                 </div>

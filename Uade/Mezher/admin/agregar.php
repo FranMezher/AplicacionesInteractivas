@@ -46,7 +46,7 @@ include "conexion.php";?>
   <div class="form-group">
 
   	  <button type="submit" class="btn btn-primary"  name="agregar">Agregar</button>
-  	  <a href="index.php" class="btn btn-secondary" role ="button">Volver</a>
+  	  <a href="dashboard.php" class="btn btn-secondary" role ="button">Volver</a>
   	
   </div>
 </form>    

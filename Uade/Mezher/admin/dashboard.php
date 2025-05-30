@@ -46,11 +46,12 @@ include("includes/header.php");
                                 <td><?php echo $fila['nombre_categoria']; ?></td>
                                 <td><img src="<?php echo $fila['imagen']; ?>" width="60" class="img-thumbnail"></td>
                                 <td>
-                                    <a href="modificar.php?id=<?php echo $fila['id_auto']; ?>" class="btn btn-warning btn-sm">
+                                    <a href="modificar.php?id=<?php echo $fila['id_auto']; ?>"
+                                        class="btn btn-warning btn-sm">
                                         <i class="bi bi-pencil-square"></i>
                                     </a>
-                                    <a href="eliminar.php?id=<?php echo $fila['id_auto']; ?>" class="btn btn-danger btn-sm">
-                                        <i class="bi bi-trash"></i>
+                                    <a class="btn btn-danger btn-sm eliminar-btn" data-id="<?php echo $fila['id_auto']; ?>">
+                                    <i class="bi bi-trash"></i>
                                     </a>
                                 </td>
                             </tr>

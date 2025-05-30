@@ -51,13 +51,13 @@
         <div class="overlay-container"> 
             <div class="overlay">
                 <div class="overlay-panel overlay-left">
-                    <h3>Ya tenes cuenta?</h3>
+                    <h4>Ya tenes cuenta?</h4>
                     <p></p>
                     <button class="ghost" id="signIn">Login</button>
                 </div>
                 <div class="overlay-panel overlay-right">
-                    <h3>Car</h3>
-                    <p>No tenes cuenta?</p>
+                    <h4>No tenes cuenta?</h4>
+                    
                     <button class="ghost" id="signUp">Registrarse</button>
                 </div>
             </div>

@@ -2,6 +2,8 @@
 
 <?php 
 
+include("includes/header.php");
+
 include("conexion.php");
 
 	$usuario=$_POST['usuario'];
@@ -36,7 +38,6 @@ include("conexion.php");
 
 	mysqli_free_result($user);
 	mysqli_close($conn);
-
-
+include("includes/footer.php");
 
 ?>

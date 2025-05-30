@@ -68,13 +68,9 @@
                 </div>
                 <div class="col-lg-6 text-center text-lg-end">
                     <div class="d-flex align-items-center justify-content-end">
-                        <a href="#" class="btn btn-light btn-sm-square rounded-circle me-3"><i
-                                class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="btn btn-light btn-sm-square rounded-circle me-3"><i
-                                class="fab fa-twitter"></i></a>
-                        <a href="#" class="btn btn-light btn-sm-square rounded-circle me-3"><i
+                        <a href="https://www.instagram.com/mezher_lr/" class="btn btn-light btn-sm-square rounded-circle me-3" target="_blank"><i
                                 class="fab fa-instagram"></i></a>
-                        <a href="#" class="btn btn-light btn-sm-square rounded-circle me-0"><i
+                        <a href="https://www.linkedin.com/in/franco-adrian-mezher-ab340a20a/" class="btn btn-light btn-sm-square rounded-circle me-0" target="_blank"><i
                                 class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
@@ -145,7 +141,7 @@
                                 <div class="categories-content rounded-bottom p-4">
                                     <h4><?php echo $fila['nombre']; ?></h4>
                                     <div class="mb-4">
-                                        <h4 class="bg-white text-primary rounded-pill py-2 px-4 mb-0">
+                                        <h4 class="bg-white text-black rounded-pill py-2 px-4 mb-0">
                                             $<?php echo $fila['precio']; ?></h4>
                                     </div>
                                     <a href="#"
@@ -199,7 +195,7 @@
             <div class="row g-5">
                 <div class="col-xl-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="bg-secondary p-5 rounded">
-                        <h4 class="text-primary mb-4">Contacta con nosotros</h4>
+                        <h4 class="text-primary mb-4">Dejanos tu mensaje</h4>
                         <form id="form">
                             <div class="row g-4">
                                 <div class="col-lg-12 col-xl-6">
@@ -219,8 +215,8 @@
                                 <div class="col-lg-12 col-xl-6">
                                     <div class="form-floating">
                                         <input type="phone" class="form-control" id="phone" name="phone"
-                                            placeholder="Ingrese su telefono">
-                                        <label for="phone">Telefono</label>
+                                            placeholder="Ingrese su Teléfono">
+                                        <label for="phone">Teléfono</label>
                                     </div>
                                 </div>
                                 <div class="col-lg-12 col-xl-6">
@@ -255,13 +251,9 @@
                 </div>
                 <div class="col-12 col-xl-1 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="d-flex flex-xl-column align-items-center justify-content-center">
-                        <a class="btn btn-xl-square btn-light rounded-circle mb-0 mb-xl-4 me-4 me-xl-0" href=""><i
-                                class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-xl-square btn-light rounded-circle mb-0 mb-xl-4 me-4 me-xl-0" href=""><i
-                                class="fab fa-twitter"></i></a>
-                        <a class="btn btn-xl-square btn-light rounded-circle mb-0 mb-xl-4 me-4 me-xl-0" href=""><i
-                                class="fab fa-instagram"></i></a>
-                        <a class="btn btn-xl-square btn-light rounded-circle mb-0 mb-xl-0 me-0 me-xl-0" href=""><i
+                        <a class="btn btn-xl-square btn-light rounded-circle mb-0 mb-xl-4 me-4 me-xl-0" href="https://www.instagram.com/mezher_lr/" target="_blank"><i
+                                class="fab fa-instagram" ></i></a>
+                        <a class="btn btn-xl-square btn-light rounded-circle mb-0 mb-xl-0 me-0 me-xl-0"target="_blank" href="https://www.linkedin.com/in/franco-adrian-mezher-ab340a20a/"><i
                                 class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>

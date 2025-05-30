@@ -7,9 +7,9 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $clave = $_POST ['clave'];
     $gmail = $_POST ['gmail'];
 
-    $sql = "INSERT INTO usuario (usuario, clave, gmail) VALUES ('$usuario', '$clave', '$gmail')";
+    $sql = "INSERT INTO usuario (usuario, clave, email) VALUES ('$usuario', '$clave', '$gmail')";
     if (mysqli_query($conn, $sql)) {
-        echo "Usuario registrado con éxito. <a href='index.php'>Iniciar sesión</a>";
+        echo"<script type='text/javascript'>location.href='index.php'</script>";
     } else {
         echo "Error al registrar: " . mysqli_error($conn);
     }

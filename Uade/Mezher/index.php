@@ -129,7 +129,7 @@
         <div class="container py-5">
             <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
                 <h1 class="display-5 text-capitalize mb-3">Nuestros <span class="text-primary">Autos</span></h1>
-                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p class="mb-0">Autos que no solo te llevan, te hacen soñar. Elegí el que va con tu estilo de vida y viví la experiencia Mezher Motors.</p>
             </div>
 
             <?php if ($totalAutos >= 3): ?>

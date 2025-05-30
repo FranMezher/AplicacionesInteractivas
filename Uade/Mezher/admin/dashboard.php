@@ -6,7 +6,10 @@ if (!isset($_SESSION['usuario'])) {
     exit();
 }
 
-$sql = "SELECT * FROM autos";
+$sql = "SELECT autos.*, categorias.categoria AS nombre_categoria
+          FROM autos
+          JOIN categorias ON autos.id_categoria = categorias.id_categoria";
+
 $resultado = mysqli_query($conn, $sql);
 
 include("includes/header.php");
@@ -40,7 +43,7 @@ include("includes/header.php");
                                 <td><?php echo $fila['nombre']; ?></td>
                                 <td><?php echo $fila['marca']; ?></td>
                                 <td><?php echo $fila['precio']; ?></td>
-                                <td><?php echo $fila['id_categoria']; ?></td>
+                                <td><?php echo $fila['nombre_categoria']; ?></td>
                                 <td><img src="<?php echo $fila['imagen']; ?>" width="60" class="img-thumbnail"></td>
                                 <td>
                                     <a href="modificar.php?id=<?php echo $fila['id_auto']; ?>" class="btn btn-warning btn-sm">

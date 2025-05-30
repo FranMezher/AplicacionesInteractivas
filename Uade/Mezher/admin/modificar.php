@@ -4,9 +4,7 @@ include "includes/header.php";
 
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
-    $query = "SELECT autos.*, categorias.categoria AS nombre_categoria
-          FROM autos
-          JOIN categorias ON autos.id_categoria = categorias.id_categoria";
+    $query = "SELECT * FROM autos WHERE id_auto = $id";
     $resultado = mysqli_query($conn, $query);
 
     if (mysqli_num_rows($resultado) == 1) {

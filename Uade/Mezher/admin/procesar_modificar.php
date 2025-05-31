@@ -8,24 +8,25 @@ if (isset($_POST['id_auto'])) {
     $precio = $_POST['precio'];
     $marca = $_POST['marca'];
 
+    // 🔥 Obtenemos la imagen actual del auto
     $queryActual = "SELECT * FROM autos WHERE id_auto = $id";
     $resultadoActual = mysqli_query($conn, $queryActual);
     $autoActual = mysqli_fetch_assoc($resultadoActual);
     $imagenActual = $autoActual['imagen'];
 
-    if (!empty($_FILES['imagen']['name'])) {
-        $img_name = $_FILES['imagen']['name'];
-        $img_tmp = $_FILES['imagen']['tmp_name'];
-        $rutaImagen = "../img/" . $img_name;
-        move_uploaded_file($img_tmp, $rutaImagen);
+    // 🔥 Tomamos la imagen subida por Dropzone (si la hay)
+    $nombreImagenNueva = $_POST['imagen_subida'] ?? '';
+
+    if (!empty($nombreImagenNueva)) {
+        $rutaImagen = "../img/" . $nombreImagenNueva; // 🔥 Si hay nueva, usamos la nueva
     } else {
-        $rutaImagen = $imagenActual;
+        $rutaImagen = $imagenActual; // 🔥 Si no hay nueva, usamos la actual
     }
 
+    // 🔥 Actualizar el registro en la base de datos
     $query = "UPDATE autos SET nombre='$nombre', marca='$marca', precio='$precio', id_categoria='$categoria', imagen='$rutaImagen' WHERE id_auto=$id";
     $resultado = mysqli_query($conn, $query);
-
-    ?>
+?>
     <!DOCTYPE html>
     <html lang="es">
     <head>
@@ -56,9 +57,9 @@ if (isset($_POST['id_auto'])) {
         </script>
     </body>
     </html>
-    <?php
+<?php
 } else {
-    ?>
+?>
     <!DOCTYPE html>
     <html lang="es">
     <head>
@@ -78,6 +79,6 @@ if (isset($_POST['id_auto'])) {
         </script>
     </body>
     </html>
-    <?php
+<?php
 }
 ?>
